@@ -14,6 +14,7 @@ export async function POST(request: NextRequest) {
     }
 
     await dbConnect();
+
     const user = await User.findOne({ email });
 
     if (user) {
