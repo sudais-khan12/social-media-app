@@ -31,7 +31,6 @@ export async function dbConnect(): Promise<Connection> {
       });
   }
 
-  // Await the promise and assign the connection
   try {
     cached.conn = await cached.promise;
   } catch (error) {

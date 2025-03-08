@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { ImageKitProvider } from "imagekitio-next";
 import { SessionProvider } from "next-auth/react";
@@ -27,14 +29,14 @@ export default function Provider({ children }: { children: React.ReactNode }) {
   };
 
   return (
-    <SessionProvider>
-      <ImageKitProvider
-        urlEndpoint={urlEndpoint}
-        publicKey={publicKey}
-        authenticator={authenticator}
-      >
-        {children}
-      </ImageKitProvider>
-    </SessionProvider>
+    // <SessionProvider>
+    <ImageKitProvider
+      urlEndpoint={urlEndpoint}
+      publicKey={publicKey}
+      authenticator={authenticator}
+    >
+      {children}
+    </ImageKitProvider>
+    // </SessionProvider>
   );
 }
