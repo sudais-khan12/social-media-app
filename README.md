@@ -30,4 +30,5 @@ npm install
 yarn install
 # or
 pnpm install
+```
 <img width="1024" height="637" alt="799434dc-8ebb-4081-afa8-e71cea87f4c2" src="https://github.com/user-attachments/assets/56d9b922-4daf-4ef4-b05e-fcb12b51ef83" />
